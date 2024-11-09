@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Login from "../components/register";
-import Signup from "../components/Signup";
+import Signup from "../components/login";
 
 function Menu() {
   const [isLogin, setIsLogin] = useState(true);
@@ -15,7 +15,7 @@ function Menu() {
             setIsLogin(!isLogin);
           }}
         >
-          Go to {isLogin ? "signup" : "login"}
+          Go to {isLogin ? "login" : "login"}
         </button>
       </div>
 
